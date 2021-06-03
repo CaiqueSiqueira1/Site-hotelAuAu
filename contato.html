@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Hotel Dog</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h2 id="marcaPag"> Hotel Dog </h2>
+        <!-- Menu -->
+        <nav class="navegacao">
+            <ul class="nav-lista">
+                <li class="nav-lista-item">
+                    <a class="nav-link" href="index.html"> Home </a>
+                </li>
+                <li class="nav-lista-item">
+                    <a class="nav-link" href="fotos.html"> Fotos </a>
+                </li>
+                <li class="nav-lista-item">
+                    <a class="nav-link" href="contato.html"> Contato </a>
+                </li>
+
+            </ul>
+        </nav>
+        <a href="index.html"><img id="logo" src="imagens/logo.png" alt="logo"></a>
+    </header>
+
+    <form action="xx" method="POST">
+        <fieldset>
+            <legend> Contato </legend>
+            <label for="nome">Nome Completo: </label><br>
+            <input type="text" name="nome" id="nome" size="50px" required placeholder="Digite seu nome">
+
+            <br><br>
+
+            <label for="Datadenasc">Data de nascimento: </label><br>
+            <input type="text" name="Datanasc" id="Datanasc" placeholder="DD/MM/AA">
+
+            <br><br>
+
+            <label for="sexo">Sexo do animal:</label><br>
+            <input type="radio" name="sexo" value="F" id="SexFeminino">
+            <label for="SexFeminino">Feminino</label>
+            <input type="radio" name="sexo" value="M" id="SexMasculino">
+            <label for="SexMasculuno">Masculino</label>
+
+            <br><br>
+
+            <label for="Contato">Contato:</label><br>
+            <input type="checkbox" name="telefone" id="telefone">
+            <label for="telefone">Telefone</label>
+            <input type="text" name="contato" id="contato">
+
+            <input type="checkbox" name="email" id="email">
+            <label for="email">Email</label>
+            <input type="text" name="contato" id="contato">
+            <br><br>
+            <label for="foto">Foto do Pet: </label>
+            <input type="file" name="foto" id="foto">
+            <br><br>
+            <label for="interesse">Interesse:</label>
+            <select name="interesse" id="interesse">
+                <option value="banho">Banho</option>
+                <option value="hospedagem">Hospedagem</option>
+                <option value="outrosAssuntos">Outros Assuntos</option>
+            </select>
+            <br>
+            <br>
+            <label for="mensagem">Mensagem: </label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+            <br>
+            <input type="submit" name="btnEnvio" value="Enviar">
+            &nbsp;&nbsp;
+            <input type="reset" name="btnReset" value="Limpar campos">
+
+
+        </fieldset>
+    </form>
+
+    <footer class="rodape">
+        <section class="rodape-secao">
+            <h3>Contato</h3>
+            <p>11 93934-4493</p>
+            <p> Hoteldog@gmail.com</p>
+        </section>
+        <section class="rodape-secao">
+            <h3>Endereço</h3>
+            <p>Avenida Faria Lima</p>
+            <p>São paulo</p>
+        </section>
+        <section class="rodape-secao">
+            <h3>Funcionamento</h3>
+            <p>Horario</p>
+            <p>Dia da semana</p>
+        </section>
+
+        <p class="copyright"> Copyright &copy; 2021. Caique Ap. </p>
+    </footer>
+
+
+</body>
+
+</html>
